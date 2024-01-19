@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "213823107441",
+    "project_id": "circularchess-50d0e",
+    "storage_bucket": "circularchess-50d0e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:213823107441:android:a36eb7fc6beab3c775c6d0",
+        "android_client_info": {
+          "package_name": "com.example.circular_chess"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAU0w61iwcRW4OTyXfthC8ILC5a2sdIrGo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
