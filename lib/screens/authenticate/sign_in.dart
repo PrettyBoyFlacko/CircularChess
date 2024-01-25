@@ -32,7 +32,7 @@ class _SignInState extends State<SignIn> {
       appBar: AppBar(
         backgroundColor: Colors.brown[400],
         elevation: 0.0,
-        title: Text('Sign-In To Circular Chess',
+        title: Text('Sign-In To Chess',
             style: TextStyle(color: Colors.black87)),
         actions: <Widget>[
           TextButton.icon(

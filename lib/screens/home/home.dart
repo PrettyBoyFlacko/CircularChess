@@ -22,7 +22,7 @@ class Home extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.brown[100],
       appBar: AppBar(
-        title: Text('Circular Chess'),
+        title: Text('Chess'),
         backgroundColor: Colors.brown[400],
         elevation: 0.0,
         actions: <Widget>[
