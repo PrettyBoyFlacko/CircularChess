@@ -1,3 +1,4 @@
+import 'package:circular_chess/services/database.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:circular_chess/models/user.dart';
 
@@ -49,6 +50,9 @@ class AuthService {
       UserCredential result = await _auth.createUserWithEmailAndPassword(
           email: email, password: password);
       User? user = result.user;
+
+      // creates a new document for the user with the uid
+      await DatabaseService(uid: user!.uid).updateUserData('New Player', 0);
       return _userFromFireBaseUser(user);
     }
     catch(e){
