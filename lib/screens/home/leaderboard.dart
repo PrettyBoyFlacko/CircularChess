@@ -11,7 +11,7 @@ class leaderBoard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return StreamProvider<QuerySnapshot>.value(
-      value: DatabaseService(uid: '').leaderboard,
+      value: DatabaseService(uid: '').leaderboard, initialData: null,
 
     )
   }
