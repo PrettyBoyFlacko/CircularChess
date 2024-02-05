@@ -11,8 +11,8 @@ Future <void> main()async{
   runApp(const MyApp());
 }
 
-//Test email: test@gmail.com, newTest@gmail.com
-//Test password: test12345678, Test12345678
+//Test email: test@gmail.com,
+//Test password: test12345678,
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});

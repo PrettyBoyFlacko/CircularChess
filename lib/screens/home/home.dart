@@ -26,6 +26,17 @@ class Home extends StatelessWidget {
         backgroundColor: Colors.brown[400],
         elevation: 0.0,
         actions: <Widget>[
+          // Leader board button.
+          TextButton.icon(
+              icon: Icon(Icons.leaderboard, color: Colors.black87,),
+              label: Text('LeaderBoard',
+                style: TextStyle(color: Colors.black87),),
+              onPressed: () async {
+                await _auth.leaderBoard();
+              }
+          ),
+
+          // Log out button.
           TextButton.icon(
             icon: Icon(Icons.person, color: Colors.black87,),
               label: Text('Log Out',
