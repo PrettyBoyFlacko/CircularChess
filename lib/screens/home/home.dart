@@ -1,6 +1,6 @@
 import 'package:circular_chess/services/auth.dart';
 import 'package:flutter/material.dart';
-import 'package:circular_chess/services/auth.dart';
+import 'package:circular_chess/screens/home/leaderboard.dart';
 import 'package:flutter_chess_board/flutter_chess_board.dart';
 
 class Home extends StatelessWidget {
@@ -12,7 +12,7 @@ class Home extends StatelessWidget {
   void initState(){
     controller.addListener(() {
       if(controller.isGameOver()){
-        print('game over');
+        print('Game Over');
       }
     });
   }
@@ -32,7 +32,7 @@ class Home extends StatelessWidget {
               label: Text('LeaderBoard',
                 style: TextStyle(color: Colors.black87),),
               onPressed: () async {
-                await _auth.leaderBoard();
+                Navigator.push(context, MaterialPageRoute(builder: (context) => leaderBoard()));
               }
           ),
 
