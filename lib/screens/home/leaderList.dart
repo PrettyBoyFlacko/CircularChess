@@ -17,6 +17,7 @@ class _leaderListState extends State<leaderList> {
     final leader = Provider.of<QuerySnapshot>(context);
 
     if(leader != null) {
+      
       for (var doc in leader.docs) {
         print(doc.data);
       }
