@@ -1,10 +1,11 @@
+import 'package:circular_chess/models/leaderboards.dart';
 import 'package:circular_chess/services/auth.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:circular_chess/services/database.dart';
 import 'package:provider/provider.dart';
 import 'package:circular_chess/screens/home/leaderList.dart';
+import 'package:circular_chess/models/leaderboards.dart';
 
 
 class leaderBoard extends StatelessWidget {
@@ -12,9 +13,9 @@ class leaderBoard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return StreamProvider<QuerySnapshot?>.value(
+    return StreamProvider<List<leader_boards>>.value(
       value: DatabaseService(uid: '').leaderboard,
-      initialData: null,
+      initialData: [],
       child: Scaffold(
         backgroundColor: Colors.brown[100],
         appBar: AppBar(
