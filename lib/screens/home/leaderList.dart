@@ -17,11 +17,11 @@ class _leaderListState extends State<leaderList> {
 
     final leader = Provider.of<List<leader_boards>>(context);
 
-    leader.forEach((leader) {
-      print(leader.name);
-      print(leader.score);
-    });
-
-    return Container();
+    return ListView.builder(
+      itemCount: leader.length,
+      itemBuilder: (context, index){
+        return LeaderTile(individualLeader: leader[index]);
+      }
+    );
     }
 }
