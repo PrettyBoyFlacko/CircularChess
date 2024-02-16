@@ -6,7 +6,6 @@ class leaderTile extends StatelessWidget {
 
   final Leader individualLeader;
 
-
   @override
   Widget build(BuildContext context) {
     return const Placeholder();
