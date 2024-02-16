@@ -8,7 +8,7 @@ import 'package:circular_chess/screens/home/leaderList.dart';
 import 'package:circular_chess/models/leaderboards.dart';
 
 
-class leaderBoard extends StatelessWidget {
+class leaderBoardWindow extends StatelessWidget {
   final AuthService _auth = AuthService();
 
   @override

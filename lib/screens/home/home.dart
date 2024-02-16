@@ -32,7 +32,7 @@ class Home extends StatelessWidget {
               label: Text('LeaderBoard',
                 style: TextStyle(color: Colors.black87),),
               onPressed: () async {
-                Navigator.push(context, MaterialPageRoute(builder: (context) => leaderBoard()));
+                Navigator.push(context, MaterialPageRoute(builder: (context) => leaderBoardWindow()));
               }
           ),
 

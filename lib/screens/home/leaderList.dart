@@ -1,6 +1,6 @@
 import 'package:circular_chess/models/leaderboards.dart';
+import 'package:circular_chess/screens/home/leader_tile.dart';
 import 'package:flutter/material.dart';
-import 'package:circular_chess/models/leaderboards.dart';
 import 'package:provider/provider.dart';
 
 class leaderList extends StatefulWidget {
@@ -15,12 +15,12 @@ class _leaderListState extends State<leaderList> {
   @override
   Widget build(BuildContext context) {
 
-    final leader = Provider.of<List<leader_boards>>(context);
+    final leaderboard = Provider.of<List<leader_boards>>(context) ?? [];
 
     return ListView.builder(
-      itemCount: leader.length,
+      itemCount: leaderboard.length,
       itemBuilder: (context, index){
-        return LeaderTile(individualLeader: leader[index]);
+        return leaderTile(individualLeader: leaderboard[index]);
       }
     );
     }
