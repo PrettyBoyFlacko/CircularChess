@@ -7,7 +7,7 @@ class leaderList extends StatefulWidget {
   const leaderList({super.key});
 
   @override
-  State<leaderList> createState() => _leaderListState();
+  _leaderListState createState() => _leaderListState();
 }
 
 class _leaderListState extends State<leaderList> {
